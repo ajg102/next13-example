@@ -71,6 +71,13 @@ export function SideNav() {
                   slug: "rapid",
                 }}
               />
+              <SideNavItem
+                close={close}
+                item={{
+                  name: "Should be Slow",
+                  slug: "slow",
+                }}
+              />
             </div>
           </div>
         </nav>
