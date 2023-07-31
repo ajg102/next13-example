@@ -34,7 +34,9 @@ export default async function Slow() {
           <p>{poke.name}</p>
           <p>
             {poke.types.map((type) => (
-              <div className="rounded-full px-3 py-2">{type.type.name}</div>
+              <div key={type.type.name} className="rounded-full px-3 py-2">
+                {type.type.name}
+              </div>
             ))}
           </p>
         </div>
