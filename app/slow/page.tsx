@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Pokemon } from "./types";
 
-export const getPokemon = async (id: string | number) => {
+const getPokemon = async (id: string | number) => {
   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`, {
     cache: "no-cache",
     next: {
