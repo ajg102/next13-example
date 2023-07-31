@@ -23,7 +23,7 @@ export default async function Slow() {
       {pokemon.map((poke) => (
         <div
           key={poke.id}
-          className="col-span-1 border-white text-white bg-black"
+          className="col-span-1 border-white border text-white bg-black"
         >
           <Image
             width={50}
@@ -34,7 +34,10 @@ export default async function Slow() {
           <p>{poke.name}</p>
           <p>
             {poke.types.map((type) => (
-              <div key={type.type.name} className="rounded-full px-3 py-2">
+              <div
+                key={type.type.name}
+                className="rounded-full px-3 py-2 bg-yellow-600 text-white"
+              >
                 {type.type.name}
               </div>
             ))}
